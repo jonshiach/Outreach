@@ -1,0 +1,127 @@
+\documentclass[tikz,border=1mm]{standalone}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+
+\usetikzlibrary{arrows,shapes,calc,math}
+\tikzset{every picture/.style={/utils/exec={\sffamily}}}
+
+\begin{document}
+
+% Differential
+% \begin{tikzpicture}
+%     \draw [-stealth'] (0, 0) -- ++(8, 0) node [below] {$x$};
+%     \draw [-stealth'] (0, 0) -- ++(0, 6) node [left] {$y$};
+%     \draw [green,line width=1pt] ({2}, {2 - 9 / 5}) -- ({7}, {7 - 9 / 5}); 
+%     \draw [red,line width=1pt] ({2}, {2 * 2 / 5}) -- ({4}, {4 * 2 / 5}); 
+%     \draw [help lines] (3, 0) -- (3, {1 + 0.2*(3 - 2) ^ 2});
+%     \draw [help lines] (0, {1 + 0.2*(3 - 2) ^ 2}) -- (6, {1 + 0.2*(3 - 2) ^ 2});
+%     \draw [help lines] (6, 0) -- (6, {1 + 0.2*(6 - 2) ^ 2}) -- (0, {1 + 0.2*(6 - 2) ^ 2});
+%     \draw [blue,domain=0:7,samples=200,line width=2pt] plot ({\x}, {1+0.2*(\x - 2) ^ 2});
+%     \node [blue,right] at (6.75, {1 + 0.2 * (6.75 - 2) ^ 2}) {$y = f(x)$};
+%     \draw [fill] ({3}, {1+0.2*(3 - 2) ^ 2}) circle (3pt);
+%     \draw [fill] ({6}, {1+0.2*(6 - 2) ^ 2}) circle (3pt);
+%     \node [below] at (3, 0) {$x_0$};
+%     \node [below] at (6, 0) {$x_0 + \Delta x$};
+%     \node [left] at (0, {1 + 0.2*(3 - 2) ^ 2}) {$f(x_0)$};
+%     \node [left] at (0, {1 + 0.2*(6 - 2) ^ 2}) {$f(x_0 + \Delta x)$};
+%     \draw [latex'-latex'] (3, 0.5) -- (6, 0.5) node [pos=0.5,above] {$\Delta x$};
+%     \draw [latex'-latex'] (6.5, {1+0.2*(3 - 2) ^ 2}) -- (6.5, {1 + 0.2*(6-2)^2}) node [pos=0.5,right] {$\Delta y$};
+% \end{tikzpicture}
+
+% Pendulum
+\tikzmath{\a = 50; \l = 3;}
+
+% \begin{tikzpicture}
+%     \coordinate (0) at (0, 0);
+%     \coordinate (1) at ($ (0)+({\a + 270}:\l) $);
+%     \draw [dashed] (0) -- ++(270:{\l});
+%     \draw ({270 + \a}:1.25) arc ({270 + \a}:270:1.25);
+%     \draw [-triangle 45] (1) -- node [right] {$g$} ++(270:1.5);
+%     \draw [blue,line width=2pt] (0) -- (1) node [black,pos=0.5,above right] {$L$};
+%     \draw [fill] (0) circle (5pt);
+%     \node [white,fill=blue,circle,inner sep=2pt] at (1) {$\boldsymbol{m}$};
+%     \node at ({270 + \a / 2}:0.9) {$\theta$};
+% \end{tikzpicture}
+
+% Double pendulum
+\tikzmath{\a1 = 60; \a2 = 40; \l1 = 3; \l2 = 3;}
+
+\begin{tikzpicture}
+    \coordinate (0) at (0, 0);
+    \coordinate (1) at ($ (0)+({\a1 + 270}:\l1) $);
+    \coordinate (2) at ($ (1)+({\a2 + 270}:\l2) $);
+    \draw [dashed] (0) -- ++(270:{\l1 + 0.5});
+    \draw [blue,line width=2pt] (0) -- (1)  node [black,pos=0.5,above right] {$L_1$};
+    \draw [red,line width=2pt] (1) -- (2) node [black,pos=0.5,above right] {$L_2$};
+    \draw [fill] (0) circle (5pt);
+    \node [white,fill=blue,circle,inner sep=2pt] at (1) {$\boldsymbol{m_1}$};
+    \node [white,fill=red,circle,inner sep=2pt] at (2) {$\boldsymbol{m_2}$};
+    \node at ($ (0)+({270 + 0.5*\a1}:0.9) $) {$\theta_1$};
+    \node at ($ (1)+({270 + 0.5*\a2}:0.9) $) {$\theta_2$};
+    \draw [-triangle 45,shorten <= 10pt] (1) -- node [left] {$g$} ++(270:1.75);
+    \draw [-triangle 45,shorten <= 10pt] (2) -- node [left] {$g$} ++(270:1.75);
+    \draw ($ (0)+({270 + \a1}:1.25) $) arc ({270 + \a1}:270:1.25);
+    \draw ($ (1)+({270 + \a2}:1.25) $) arc ({270 + \a2}:270:1.25);
+\end{tikzpicture}
+
+% 2 body problem 
+\tikzmath{\a = 20; \r = 4;}
+
+% \begin{tikzpicture}[node distance=0.75cm]
+%     \coordinate (1) at (0, 0);
+%     \coordinate (2) at (\a:\r);
+%     \draw [-triangle 45] (1) -- ($ (1)!0.3!(2) $) node [pos=0.7,below right] {$F_{12}$};
+%     \draw [-triangle 45] (2) -- ($ (2)!0.3!(1) $) node [pos=0.7,above left] {$F_{21}$};
+%     \node [white,fill=blue,circle,inner sep] (p1) at (1) {$\boldsymbol{m_1}$};
+%     \node [white,fill=red,circle,inner sep] (p2) at (2) {$\boldsymbol{m_2}$};
+%     \node [blue,below of=p1] {$\mathbf{r}_1 = (x_1,y_1)$};
+%     \node [red,below of=p2] {$\mathbf{r}_2 = (x_2,y_2)$};
+%     \draw [latex'-latex'] ($ (1)+({\a + 90}:0.7) $) -- ++(\a:\r) node [pos=0.5,above,rotate=\a] {$r_{12}$};
+%     \draw ($ (1)+({\a + 90}:0.6) $) -- ++({\a + 90}:0.2);
+%     \draw ($ (2)+({\a + 90}:0.6) $) -- ++({\a + 90}:0.2);
+% \end{tikzpicture}
+
+
+% 3 body problem 
+\tikzmath{\a2 = 0; \a3 = 50; \r2 = 5; \r3 = 4;}
+
+% \begin{tikzpicture}[node distance=0.75cm]
+%     \coordinate (1) at (0,0);
+%     \coordinate (2) at (\a2:\r2);
+%     \coordinate (3) at (\a3:\r3);
+%     \draw [-triangle 45] (1) -- ($ (1)!0.5!(3) $) node [pos=0.8,above left] {$F_{13}$};
+%     \draw [-triangle 45] (1) -- ($ (1)!0.2!(2) $) node [above] {$F_{12}$};
+%     \draw [-triangle 45] (2) -- ($ (2)!0.5!(3) $) node [pos=0.8,above right] {$F_{23}$};
+%     \draw [-triangle 45] (2) -- ($ (2)!0.3!(1) $) node [above,pos=0.7] {$F_{21}$};
+%     \draw [-triangle 45] (3) -- ($ (3)!0.35!(1) $) node [above left] {$F_{31}$};
+%     \draw [-triangle 45] (3) -- ($ (3)!0.3!(2) $) node [above right] {$F_{32}$};
+%     \node [white,fill=blue,circle,inner sep=6pt] (p1) at (1) {$\boldsymbol{m_1}$};
+%     \node [white,fill=red,circle,inner sep=1pt] (p2) at (2) {$\boldsymbol{m_2}$};
+%     \node [white,fill=green!60!black,circle,inner sep=10pt] (p3) at (3) {$\boldsymbol{m_3}$};
+%     \node [blue,below of=p1,node distance=0.8cm] {$\mathbf{r}_1 =(x_1,y_1)$};
+%     \node [red,below of=p2] {$\mathbf{r}_1 =(x_2,y_2)$};
+%     \node [green!60!black,above of=p3,node distance=1cm] {$\mathbf{r}_3 = (x_3, y_3)$};
+% \end{tikzpicture}
+
+% \begin{tikzpicture}[node distance=0.75cm]
+%     \coordinate (1) at (0,0);
+%     \coordinate (2) at (-4, 0);
+%     \coordinate (3) at (4, 0);
+%     \draw [-triangle 45] (1) -- ++(-1.25, 0) node [above] {$F_{12}$};
+%     \draw [-triangle 45] (1) -- ++(1.25, 0) node [above] {$F_{13}$};
+%     \draw [-triangle 45] (2) -- ++(1.5, 0) node [pos=0.8,above] {$F_{21}+F_{23}$};
+%     \draw [-triangle 45] (3) -- ++(-1.5, 0) node [pos=0.8,below] {$F_{31}+F_{32}$};
+%     \draw [-latex',red] (2) -- ++(0, 1) node [above,right] {$\mathbf{u}_2=(0,10)$} ;
+%     \draw [-latex',green!60!black] (3) -- ++(0, -1) node [right] {$\mathbf{u}_2 = (0, -10)$} ;
+%     \node [white,fill=blue,circle,inner sep=10pt] (p1) at (1) {$\boldsymbol{m_1}$};
+%     \node [white,fill=red,circle,inner sep=1pt] (p2) at (2) {$\boldsymbol{m_2}$};
+%     \node [white,fill=green!60!black,circle,inner sep=1pt] (p3) at (3) {$\boldsymbol{m_3}$};
+%     \node [blue,below of=p1,node distance=1cm] {$\mathbf{r}_1=(0, 0)$};
+%     \node [red,below of=p2] {$\mathbf{r}_2 = (-1, 0)$};
+%     \node [green!60!black,above of=p3] {$\mathbf{r}_3 = (1, 0)$};
+% \end{tikzpicture}
+
+\end{document}

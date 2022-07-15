@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="173.541pt" height="107.709pt" viewBox="0 0 173.541 107.709">
+<g enable-background="new">
+<path transform="matrix(1,0,0,-1,19.636,88.073)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M 0 0 L 140.73778 0 "/>
+<path transform="matrix(1,0,0,-1,160.37378,88.073)" d="M .797 0 C -.19925 .19925 -1.19551 .59775 -2.39102 1.29512 C -1.19551 .3985 -1.19551 -.3985 -2.39102 -1.29512 C -1.19551 -.59775 -.19925 -.19925 .797 0 Z "/>
+<path transform="matrix(1,0,0,-1,160.37378,88.073)" stroke-width=".3985" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M .797 0 C -.19925 .19925 -1.19551 .59775 -2.39102 1.29512 C -1.19551 .3985 -1.19551 -.3985 -2.39102 -1.29512 C -1.19551 -.59775 -.19925 -.19925 .797 0 Z "/>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 0 107.709)" font-size="9.9626" font-family="CMR10"><tspan y="-8.645" x="76.053 79.95834 84.38174 89.36304 92.13264">real(</tspan></text>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 0 107.709)" font-size="9.9626" font-family="CMMI10" font-style="italic"><tspan y="-8.645" x="96.006">z</tspan></text>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 0 107.709)" font-size="9.9626" font-family="CMR10"><tspan y="-8.645" x="101.076999">)</tspan></text>
+<path transform="matrix(1,0,0,-1,19.636,88.073)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M 0 0 L 0 84.04416 "/>
+<path transform="matrix(0,-1,-1,-0,19.636,4.028839)" d="M .797 0 C -.19925 .19925 -1.19551 .59775 -2.39102 1.29512 C -1.19551 .3985 -1.19551 -.3985 -2.39102 -1.29512 C -1.19551 -.59775 -.19925 -.19925 .797 0 Z "/>
+<path transform="matrix(0,-1,-1,-0,19.636,4.028839)" stroke-width=".3985" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#000000" d="M .797 0 C -.19925 .19925 -1.19551 .59775 -2.39102 1.29512 C -1.19551 .3985 -1.19551 -.3985 -2.39102 -1.29512 C -1.19551 -.59775 -.19925 -.19925 .797 0 Z "/>
+<text xml:space="preserve" transform="matrix(0 -1 1 0 58.786 76.174999)" font-size="9.9626" font-family="CMR10"><tspan y="-45.16" x="13.626 16.395604 24.69445 29.67575 34.796529">imag(</tspan></text>
+<text xml:space="preserve" transform="matrix(0 -1 1 0 58.786 76.174999)" font-size="9.9626" font-family="CMMI10" font-style="italic"><tspan y="-45.16" x="38.671">z</tspan></text>
+<text xml:space="preserve" transform="matrix(0 -1 1 0 58.786 76.174999)" font-size="9.9626" font-family="CMR10"><tspan y="-45.16" x="43.743">)</tspan></text>
+<path transform="matrix(1,0,0,-1,19.636,88.073)" d="M 99.60553 56.69362 C 99.60553 57.4718 98.97467 58.10265 98.19649 58.10265 C 97.4183 58.10265 96.78745 57.4718 96.78745 56.69362 C 96.78745 55.91542 97.4183 55.28458 98.19649 55.28458 C 98.97467 55.28458 99.60553 55.91542 99.60553 56.69362 Z M 98.19649 56.69362 "/>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 0 107.709)" font-size="9.9626" font-family="CMMI10" font-style="italic"><tspan y="-82.922" x="122.487">z</tspan></text>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 0 107.709)" font-size="9.9626" font-family="CMR10"><tspan y="-82.922" x="130.326">=</tspan></text>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 0 107.709)" font-size="9.9626" font-family="CMMI10" font-style="italic"><tspan y="-82.922" x="140.84201">x</tspan></text>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 0 107.709)" font-size="9.9626" font-family="CMR10"><tspan y="-82.922" x="148.75002">+</tspan></text>
+<text xml:space="preserve" transform="matrix(1 0 -0 1 0 107.709)" font-size="9.9626" font-family="CMMI10" font-style="italic"><tspan y="-82.922" x="158.71202 163.95235">yi</tspan></text>
+<path transform="matrix(1,0,0,-1,19.636,88.073)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M 2.07063 1.19547 L 94.73305 54.69403 "/>
+<path transform="matrix(-.86601,.49998,.49998,.86601,21.70665,86.87752)" d="M 2.39102 0 C 1.39476 .19925 -.3985 .59775 -1.59401 1.49438 C -.59775 .3985 -.59775 -.3985 -1.59401 -1.49438 C -.3985 -.59775 1.39476 -.19925 2.39102 0 Z "/>
+<path transform="matrix(.86601,-.49998,-.49998,-.86601,114.36903,33.37898)" d="M 2.39102 0 C 1.39476 .19925 -.3985 .59775 -1.59401 1.49438 C -.59775 .3985 -.59775 -.3985 -1.59401 -1.49438 C -.3985 -.59775 1.39476 -.19925 2.39102 0 Z "/>
+<text xml:space="preserve" transform="matrix(.86603 -.5 .5 .86603 23.1613 120.97493)" font-size="9.9626" font-family="CMSY10" font-style="italic"><tspan y="-36.587" x="36.335">|</tspan></text>
+<text xml:space="preserve" transform="matrix(.86603 -.5 .5 .86603 23.1613 120.97493)" font-size="9.9626" font-family="CMMI10" font-style="italic"><tspan y="-36.587" x="39.101999">z</tspan></text>
+<text xml:space="preserve" transform="matrix(.86603 -.5 .5 .86603 23.1613 120.97493)" font-size="9.9626" font-family="CMSY10" font-style="italic"><tspan y="-36.587" x="44.172998">|</tspan></text>
+<text xml:space="preserve" transform="matrix(.86603 -.5 .5 .86603 23.1613 120.97493)" font-size="9.9626" font-family="CMR10"><tspan y="-36.587" x="49.707998">=</tspan></text>
+<text xml:space="preserve" transform="matrix(.86603 -.5 .5 .86603 23.1613 120.97493)" font-size="9.9626" font-family="CMEX10"><tspan y="-45.332" x="60.223997">&#xfffd;</tspan></text>
+<path transform="matrix(.86603,-.5,-.5,-.86603,61.179845,46.450227)" stroke-width=".398" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M 0 0 L 32.051 0 "/>
+<text xml:space="preserve" transform="matrix(.86603 -.5 .5 .86603 23.1613 120.97493)" font-size="9.9626" font-family="CMMI10" font-style="italic"><tspan y="-36.587" x="70.187">y</tspan></text>
+<text xml:space="preserve" transform="matrix(.86603 -.5 .5 .86603 23.1613 120.97493)" font-size="6.9738" font-family="CMR7"><tspan y="-39.465" x="75.42899">2</tspan></text>
+<text xml:space="preserve" transform="matrix(.86603 -.5 .5 .86603 23.1613 120.97493)" font-size="9.9626" font-family="CMR10"><tspan y="-36.587" x="82.11199">+</tspan></text>
+<text xml:space="preserve" transform="matrix(.86603 -.5 .5 .86603 23.1613 120.97493)" font-size="9.9626" font-family="CMMI10" font-style="italic"><tspan y="-36.587" x="92.07499">x</tspan></text>
+<text xml:space="preserve" transform="matrix(.86603 -.5 .5 .86603 23.1613 120.97493)" font-size="6.9738" font-family="CMR7"><tspan y="-39.465" x="97.76899">2</tspan></text>
+</g>
+</svg>

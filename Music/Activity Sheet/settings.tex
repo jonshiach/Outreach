@@ -1,0 +1,73 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% packages
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{upgreek}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage{emptypage}
+\usepackage{tabularx}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage[inline]{enumitem}
+\usepackage{subfiles}
+\usepackage{multicol}
+\usepackage{placeins}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{boldline}
+\usepackage{titlesec}
+
+% Graphics
+\usepackage[pdftex]{graphicx}
+\usepackage{epsfig}
+\usepackage[labelformat=simple]{subcaption}
+\graphicspath{{Images/}}
+\setkeys{Gin}{width=0.75\textwidth}
+\renewcommand\thesubfigure{(\alph{subfigure})}
+\captionsetup{width=0.9\textwidth}
+
+% Font set (comment out to default to Computer Modern)
+\usepackage{lmodern}
+\renewcommand\familydefault{\sfdefault}
+\allowdisplaybreaks
+
+% Tikz defaults
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+\usepackage{forest}
+\usepackage{rotating}
+\usepackage{subcaption}
+\usetikzlibrary{arrows,patterns,calc,matrix,shapes,external}
+\tikzset{point/.style={draw,fill,circle,inner sep=1pt}}
+
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+% Change \rightmark for online and print versions
+\lhead{\includegraphics[width=3cm]{MMU_logo_1.png}}
+\lfoot{Dr Jon Shiach}
+\cfoot{\thepage}
+\rfoot{Manchester Metropolitan University}
+\fancyheadoffset{1cm}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{2em}
+
+% Shorthand commands
+\newcommand{\vr}{\mathbf}
+\newcommand{\unitvec}[1]{\hat{\mathbf{#1}}}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\adj}{\operatorname{adj}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\REF}{Re\!f}
+\newcommand{\ddx}{\dfrac{\mathrm{d}}{\mathrm{d}x}}
+
+% Subsection headings
+\titleformat{\section}
+    {\normalfont\normalsize\bf}{Activity \thesection: }{0pt}{}
