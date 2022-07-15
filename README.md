@@ -1,12 +1,8 @@
 # Outreach Materials
 
-Dr Jon Shiach
-
-## About
-
 This repository contains outreach materials for open days and shool visits activities. They are written using Jupyter notebooks so users will need to ensure that they have Python and Jupyter install on their computer. If you are unable to install software on the computer you are using you can run the notebooks in the cloud using Google Colab. 
 
-### Install Python and Jupyter
+## Install Python and Jupyter
 
 1. Download and install [_**Anaconda**_](https://www.anaconda.com/products/individual) onto your computer. Anaconda is a suite of open source apps including Jupyter notebook which is free to download and safe to do so.
 2. Once you have installed Jupyter run the app. How to do this will depend on your operating system.
@@ -14,7 +10,7 @@ This repository contains outreach materials for open days and shool visits activ
    - **MacOS**: run _**Anaconda Navigator**_ and then click on then _**Launch**_ button beneath _**Jupyter Notebook**_
 3. A web browser window should open showing you the files on your computer. Navigate to the `Maths of Music.ipynb` file and click on the file to open it.
 
-### Use Google Colab
+## Use Google Colab
 
 If you are unable to install software on a computer, or prefer to work in the cloud, you can run Jupyter notebooks using [Google Colab](https://colab.research.google.com/). To do this you will need a Google account so if you do not already have one you can sign up [here](https://www.google.com/account/about/).
 
